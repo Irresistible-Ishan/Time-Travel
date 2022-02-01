@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px black;
+            border-radius: 10px;
+            display: block;
+            text-decoration: none;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+ .login {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 25px;
+   padding-right: 25px;
+   border-radius: 100px;
+   border-style: solid;
+   border-color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 15px
+ }
+</style>
+<body>
+  <div><center><br><br><br><br><br><br><br><br><br><h1>security check</h1>
+    <input type="search" value="" id="search" onchange="openPage()" class="login" placeholder="password">
+  </center></div>
+</body>
+<script>
+function openPage(){
+var x = document.getElementById("search").value;
+if (x === "accesscodeishan"){
+window.open("/theory.html");
+}
+if ( x === "") {
+window.open("customizedalert.html");
+}
+}
+</script>
+
+</html>
